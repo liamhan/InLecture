@@ -1,20 +1,24 @@
 package com.team3.inlecture.hello;
 
-import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
  
 @Controller
 public class HelloController {
-	Logger log = Logger.getLogger(this.getClass());
- 
+	@Autowired
+    HelloService helloService;
+	
 	@RequestMapping("/welcome")
-	public ModelAndView helloWorld() {
-		log.debug("인터셉터 테스트");
+	public String helloWorld(Model model) {
 		String message = "<br><div style='text-align:center;'>"
 				+ "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from CrunchifyHelloWorld.java **********</div><br><br>";
-		return new ModelAndView("welcome", "message", message);
+		
+		model.addAttribute("students", helloService.getStudentList());
+		//return new ModelAndView("welcome", "message", message);
+		return "welcome";
 	}
 }
