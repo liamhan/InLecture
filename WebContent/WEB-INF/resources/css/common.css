@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+ * {
+  padding: 0;
+  margin: 0;
+  }
+  html, body {
+  height: 100%;
+  overflow:hidden;
+  }
+.layout_header{
+	width: 100%;
+    border: 1px solid black;
+    height: 60px;
+    margin: 0px;
+}
+.layout_middle{
+	border: 1px solid black;
+    height: 600px;
+    width: 100%;
+}
+.layout_menu{
+	float: left;
+    width: 150px;
+    display: block;
+    height: 100%;
+    border: 1px solid black;
+}
+.layout_body{
+	height: 100%;
+    width: 700px;
+    float: left;
+    border: 1px solid black;
+}
+.layout_footer{
+	height: 60px;
+    width: 100%;
+    border: 1px solid black;
+}

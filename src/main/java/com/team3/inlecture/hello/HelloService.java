@@ -6,7 +6,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-@Service("bookService")
+@Service
 public class HelloService {
      
     @Resource(name="helloDao")
