@@ -1,14 +1,53 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>InLecture</title>
+	<title>InLecture</title>	
 </head>
+
 <body>
-<div>
-°ϊΈρ»πΐΤ ΖδΐΜΑφΐΤ΄Ο΄Ω.
-</div>
+<form:form commandName="subject">
+  <table>
+     <tr>
+        <td>κ³Όλª©μ΄λ¦„ :</td>
+        <td>
+        <form:input path="name" />
+        <form:errors path="name" />
+        </td>
+     </tr>
+     <tr>
+        <td>ν¨μ¤μ›λ“ :</td> 
+        <td>
+        <form:password path="pw" />
+        <form:errors path="pw" />
+        </td>
+     </tr>
+     <tr>
+        <td>μ ν• :</td>
+        <td><form:radiobutton path="role" value="S" label="ν•™μƒ" /> 
+            <form:radiobutton path="role" value="T" label="κµμ" />
+            <form:errors path="role" /></td>
+     </tr>
+     <tr>
+        <td>μ΄λ¦„ :</td>
+        <td><form:input path="name" /><form:errors path="name" /></td>
+     </tr>
+     <tr>
+        <td>λ‹‰λ„¤μ„ :</td>
+        <td><form:input path="nick" /><form:errors path="nick" /></td>
+     </tr>
+     <tr>
+        <td>ν•™κµ :</td>
+        <td><form:input path="school" /><form:errors path="school" /></td>
+     </tr>
+     <tr>
+        <td>μ΄λ©”μΌ :</td>
+        <td><form:input path="email" /><form:errors path="email" /></td>
+     </tr>
+   </table>
+   <input type="submit" value="submit"/>
+</form:form>
 </body>
 </html>
