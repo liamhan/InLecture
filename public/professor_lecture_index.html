@@ -75,7 +75,7 @@
                     <li><a href="#">과목 3</a></li>
                     <li><a href="#">과목 4</a></li>
                     <li><a href="#">과목 5</a></li>
-                    <li class="divider"></li>
+                  <li class="divider"></li>
                     <li><a href="index.html">Logout</a></li>
                 </ul>
             </div>
@@ -93,7 +93,7 @@
 
                     </div>
                     <ul class="nav nav-pills nav-stacked main-menu">
-                       <li class="nav-header">Menu</li>
+                        <li class="nav-header">Menu</li>
                         <li><a class="ajax-link" href="professor_index"><i class="glyphicon glyphicon-home"></i><span> 메인</span></a>
                         </li>
                         <li><a class="ajax-link" href="professor_lecture_index.html"><i class="glyphicon glyphicon-bookmark"></i><span> 강의</span></a>
@@ -108,8 +108,8 @@
                         <li><a class="ajax-link" href="professor_quiz"><i class="glyphicon glyphicon-pencil"></i><span> 퀴즈 내기</span></a>
                         </li>
                         <li><a class="ajax-link" href="professor_stat.html"><i class="glyphicon glyphicon-stats"></i><span> 참여도 확인</span></a>
-                        </li>
-                </div>
+                        </li>                
+                    </div>
             </div>
         </div>
         <!--/span-->
@@ -124,34 +124,36 @@
             </div>
         </noscript>
 
-        <div id="content" class="col-lg-10 col-sm-10">
-            <!-- content starts -->
-            <div>
-    <ul class="breadcrumb">
-        <li>
-            <a href="professor_index.html">Home</a>
-        </li>
-        <li>
-            <a href="professor_question_box.html">Question & Answer</a>
-        </li>
-    </ul>
+<div class="col-md-3 col-sm-3 col-xs-6">
+    <a data-toggle="tooltip" title="2개의 새로운 공지사항" class="well top-block" href="professor_gongji.html">
+        <i class="glyphicon glyphicon-bell blue"></i>
+        <div>공지사항</div>
+        <div>13</div>
+        <span class="notification blue">2</span>
+    </a>
 </div>
+    
+<div class=" row">
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" title="새로운 답변 안한 질문" class="well top-block" href="professor_question_box.html">
+            <i class="glyphicon glyphicon-check blue"></i>
 
-<span style="font-weight:bold">제목</span>
-<div class="well">132쪽 Figure 23에 관한 질문</div>
-<span style="font-weight:bold">내용</span>
-<div class="well">그런 그림이 있나요?</div>
+            <div>답변 안한 질문</div>
+            <div>4</div>
+            <span class="notification">1</span>
+        </a>
+    </div>
 
+    <div class="col-md-3 col-sm-3 col-xs-6">
+        <a data-toggle="tooltip" title="4개의 쪽지가 도착했습니다." class="well top-block" href="professor_note_box.html">
+            <i class="glyphicon glyphicon-send blue"></i>
 
-
-
-<input type="button" value="삭제" style="float: right" onclick="alert('질문이 삭제되었습니다.')">
-<a href= "professor_question_write.html"><input type="button" value="수정" style="float: right" ></a>
-<a href= "professor_question_write.html"><input type="button" value="답변" style="float: right" ></a>
-
-
-
-
+            <div>쪽지</div>
+            <div>63</div>
+            <span class="notification blue">4</span>
+        </a>
+    </div>
+</div>
 
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 

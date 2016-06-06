@@ -98,21 +98,11 @@
                         </li>
                         <li><a class="ajax-link" href="professor_newsubject"><i class="glyphicon glyphicon-edit"></i><span> 과목 개설</span></a>
                         </li>
-                        <li><a class="ajax-link" href="professor_quizsave"><i class="glyphicon glyphicon-pencil"></i><span> 퀴즈 만들기</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="professor_lecture.html"><i class="glyphicon glyphicon-bookmark"></i><span> 강의</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="professor_calendar"><i class="glyphicon glyphicon-calendar"></i><span> 일정 관리</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="professor_gongji.html"><i class="glyphicon glyphicon-bullhorn"></i><span> 공지 게시판</span></a></li>
-                        <li><a class="ajax-link" href="professor_question_box.html"><i class="glyphicon glyphicon-list-alt"></i><span> 질문 게시판</span></a>
+                        <li><a class="ajax-link" href="professor_lecture_index.html"><i class="glyphicon glyphicon-bookmark"></i><span> 강의</span></a>
                         </li>
                         <li><a class="ajax-link" href="professor_note_box.html"><i class="glyphicon glyphicon-envelope"></i><span> 쪽지함</span></a>
                         </li>
-                        <li><a class="ajax-link" href="professor_stat.html"><i class="glyphicon glyphicon-stats"></i><span> 참여도 확인</span></a>
-                        </li>
-                       
-                </div>
+                    </div>
             </div>
         </div>
         <!--/span-->
@@ -141,37 +131,44 @@
 </div>
 
 
-<div class="col-md-3 col-sm-3 col-xs-6">
-    <a data-toggle="tooltip" title="2개의 새로운 공지사항" class="well top-block" href="professor_gongji.html">
-        <i class="glyphicon glyphicon-bell blue"></i>
-        <div>공지사항</div>
-        <div>13</div>
-        <span class="notification blue">2</span>
-    </a>
-</div>
-    
-<div class=" row">
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="새로운 답변 안한 질문" class="well top-block" href="professor_question_box.html">
-            <i class="glyphicon glyphicon-check blue"></i>
-
-            <div>답변 안한 질문</div>
-            <div>4</div>
-            <span class="notification">1</span>
-        </a>
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2><i class="glyphicon glyphicon-info-sign"></i> 나의 과목</h2>
+                <div class="box-icon">
+                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                            class="glyphicon glyphicon-chevron-up"></i></a>
+                    <a href="#" class="btn btn-close btn-round btn-default"><i
+                            class="glyphicon glyphicon-remove"></i></a>
+                </div>
+            </div>
+            
+            <div class="box-content row">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <a data-toggle="tooltip" class="well top-block" href="student_lecture_index.html">
+                        <div>소프트웨어공학</div>
+                        <div>이은석</div>
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <a data-toggle="tooltip" class="well top-block" href="student_lecture_index.html">
+                        <div>하드웨어공학</div>
+                        <div>이은석</div>
+                    </a>
+                </div>
+                
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <a data-toggle="tooltip" class="well top-block" href="student_lecture_index.html">
+                        <div>랜섬웨어공학</div>
+                        <div>이은석</div>
+                    </a>
+                </div>
+                
+            </div>
     </div>
-
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="4개의 쪽지가 도착했습니다." class="well top-block" href="professor_note_box.html">
-            <i class="glyphicon glyphicon-send blue"></i>
-
-            <div>쪽지</div>
-            <div>63</div>
-            <span class="notification blue">4</span>
-        </a>
-    </div>
 </div>
-
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- library for cookie management -->
